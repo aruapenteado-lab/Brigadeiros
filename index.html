@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carol Brigadeiros | Brigadeiros Gourmet e Encomendas</title>
+<meta name="description" content="Brigadeiros artesanais feitos com carinho para presentes, festas e momentos especiais. Peça já pelo WhatsApp.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Carol Brigadeiros | Brigadeiros Gourmet e Encomendas">
+<meta property="og:description" content="Brigadeiros artesanais feitos com carinho para presentes, festas e momentos especiais.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="topo">
+  <div class="header__container">
+    <a href="#topo" class="header__logo" aria-label="Carol Brigadeiros - início">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="40" height="40">
+          <circle cx="32" cy="32" r="30" fill="var(--rosa-claro)"/>
+          <path d="M32 14c-9 0-16 6.5-16 15 0 7.5 6 12.5 12.5 16.5.8.5 1.7 1 2.5 1.5 1.4.8 3.1.8 4.5 0 .8-.5 1.7-1 2.5-1.5C48 41.5 48 36.5 48 29c0-8.5-7-15-16-15Z" fill="var(--rosa)"/>
+          <circle cx="26" cy="27" r="1.6" fill="var(--creme)"/>
+          <circle cx="35" cy="24" r="1.3" fill="var(--creme)"/>
+          <circle cx="38" cy="31" r="1.5" fill="var(--creme)"/>
+          <circle cx="29" cy="35" r="1.3" fill="var(--creme)"/>
+        </svg>
+      </span>
+      <span class="logo-type">Carol <em>Brigadeiros</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#topo" class="nav__link">Início</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#brigadeiros" class="nav__link">Brigadeiros</a></li>
+        <li><a href="#cardapio" class="nav__link">Cardápio</a></li>
+        <li><a href="#eventos" class="nav__link">Eventos</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+      <a href="#" class="btn btn--primary btn--nav" id="btnEncomendaHeader">Faça sua encomenda</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__decor hero__decor--1" aria-hidden="true"></div>
+    <div class="hero__decor hero__decor--2" aria-hidden="true"></div>
+
+    <div class="hero__container">
+      <div class="hero__photo photo-frame photo-frame--hero">
+        <span class="photo-frame__placeholder" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="72" height="72"><circle cx="50" cy="52" r="30" fill="currentColor" opacity=".55"/><circle cx="40" cy="42" r="2.6" fill="var(--creme)"/><circle cx="58" cy="38" r="2.1" fill="var(--creme)"/><circle cx="63" cy="55" r="2.4" fill="var(--creme)"/><circle cx="45" cy="63" r="2.1" fill="var(--creme)"/><circle cx="52" cy="50" r="2" fill="var(--creme)"/></svg>
+        </span>
+        <img src="assets/images/hero.jpg" alt="Brigadeiros gourmet da Carol Brigadeiros, arranjados em uma travessa" loading="eager" onerror="this.style.display='none'">
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Feitos à mão, um a um</p>
+        <h1 class="hero__title">Pequenos momentos, grandes sabores.</h1>
+        <p class="hero__subtitle">Brigadeiros feitos com carinho para transformar qualquer momento em uma experiência especial.</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary btn--lg" id="btnEncomendaHero">Faça sua encomenda</a>
+          <a href="#cardapio" class="btn btn--ghost btn--lg">Ver cardápio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="sobre" id="sobre">
+    <div class="sobre__container">
+      <div class="sobre__photo photo-frame photo-frame--tall">
+        <span class="photo-frame__placeholder" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect x="22" y="34" width="56" height="40" rx="6" fill="currentColor" opacity=".5"/><circle cx="50" cy="34" r="16" fill="currentColor" opacity=".55"/></svg>
+        </span>
+        <img src="assets/images/sobre.jpg" alt="Produção artesanal dos brigadeiros da Carol Brigadeiros" loading="lazy" onerror="this.style.display='none'">
+      </div>
+
+      <div class="sobre__content">
+        <p class="eyebrow">Nossa história</p>
+        <h2 class="section-title">Feito com carinho, pensado para encantar.</h2>
+        <p class="sobre__texto">
+          A Carol Brigadeiros nasceu do gosto por transformar ingredientes simples em momentos de afeto.
+          Cada doce é preparado artesanalmente, em pequenas quantidades, com atenção a cada detalhe —
+          do ponto certo do brigadeiro ao acabamento da embalagem. O resultado é um doce que carrega
+          cuidado do primeiro ao último bocado.
+        </p>
+
+        <ul class="diferenciais">
+          <li><span class="diferenciais__icon">♡</span> Produção artesanal</li>
+          <li><span class="diferenciais__icon">♡</span> Ingredientes selecionados</li>
+          <li><span class="diferenciais__icon">♡</span> Feito com carinho</li>
+          <li><span class="diferenciais__icon">♡</span> Ideal para presentear</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTAQUES / QUERIDINHOS ============ -->
+  <section class="destaques" id="brigadeiros">
+    <div class="section-header">
+      <p class="eyebrow">Vitrine</p>
+      <h2 class="section-title">Os queridinhos da casa</h2>
+      <p class="section-subtitle">Os sabores que mais conquistam quem experimenta.</p>
+    </div>
+
+    <div class="destaques__grid" id="destaquesGrid">
+      <!-- preenchido via JavaScript -->
+    </div>
+  </section>
+
+  <!-- ============ CARDÁPIO / PRODUTOS ============ -->
+  <section class="cardapio" id="cardapio">
+    <div class="section-header">
+      <p class="eyebrow">Cardápio</p>
+      <h2 class="section-title">Conheça nossos sabores</h2>
+      <p class="section-subtitle">Escolha por categoria e encontre o brigadeiro perfeito para o seu momento.</p>
+    </div>
+
+    <div class="filtros" id="filtros" role="tablist" aria-label="Filtrar produtos por categoria">
+      <button class="filtro-btn is-active" data-categoria="todos" role="tab" aria-selected="true">Todos</button>
+      <button class="filtro-btn" data-categoria="brigadeiros" role="tab" aria-selected="false">Brigadeiros</button>
+      <button class="filtro-btn" data-categoria="bolos" role="tab" aria-selected="false">Bolos</button>
+      <button class="filtro-btn" data-categoria="doces" role="tab" aria-selected="false">Doces</button>
+      <button class="filtro-btn" data-categoria="kits" role="tab" aria-selected="false">Kits</button>
+      <button class="filtro-btn" data-categoria="presentes" role="tab" aria-selected="false">Presentes</button>
+    </div>
+
+    <div class="produtos__grid" id="produtosGrid">
+      <!-- preenchido via JavaScript -->
+    </div>
+
+    <div class="cardapio__cta">
+      <p>Prefere ver tudo em um só lugar?</p>
+      <a href="#" class="btn btn--outline" id="btnPedido">Fazer pedido pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS ============ -->
+  <section class="eventos" id="eventos">
+    <div class="eventos__container">
+      <div class="eventos__content">
+        <p class="eyebrow">Datas especiais</p>
+        <h2 class="section-title section-title--claro">Seu evento merece um toque especial.</h2>
+        <p class="eventos__texto">
+          Aniversários, casamentos, chá revelação, festas de empresa ou aquela comemoração em casa —
+          preparamos brigadeiros e lembrancinhas sob medida para deixar sua data ainda mais doce.
+        </p>
+        <ul class="eventos__lista">
+          <li>Aniversários</li>
+          <li>Casamentos</li>
+          <li>Festas em geral</li>
+          <li>Eventos corporativos</li>
+          <li>Lembrancinhas personalizadas</li>
+        </ul>
+        <a href="#" class="btn btn--primary btn--lg" id="btnEventos">Fazer uma encomenda</a>
+      </div>
+
+      <div class="eventos__photo photo-frame photo-frame--tall photo-frame--evento">
+        <span class="photo-frame__placeholder" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="60" height="60"><path d="M50 20c-14 8-14 24 0 32 14-8 14-24 0-32Z" fill="currentColor" opacity=".55"/><rect x="30" y="58" width="40" height="18" rx="4" fill="currentColor" opacity=".45"/></svg>
+        </span>
+        <img src="assets/images/evento.jpg" alt="Mesa de doces decorada para evento com brigadeiros da Carol Brigadeiros" loading="lazy" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="instagram" id="instagramSec">
+    <div class="section-header">
+      <p class="eyebrow">Redes sociais</p>
+      <h2 class="section-title">@brigadeiroscarool</h2>
+      <p class="section-subtitle">Acompanhe o dia a dia da produção e as novidades por lá.</p>
+    </div>
+
+    <div class="instagram__grid" id="instagramGrid">
+      <!-- preenchido via JavaScript -->
+    </div>
+
+    <div class="instagram__cta">
+      <a href="https://www.instagram.com/brigadeiroscarool/" target="_blank" rel="noopener" class="btn btn--outline">Ver mais no Instagram</a>
+    </div>
+  </section>
+
+  <!-- ============ ENCOMENDAS ============ -->
+  <section class="encomendas" id="encomendas">
+    <div class="encomendas__decor" aria-hidden="true"></div>
+    <div class="encomendas__container">
+      <h2 class="section-title">Vamos preparar algo especial para você?</h2>
+      <p class="encomendas__texto">Conte pra gente a ocasião, a quantidade e o sabor — o resto é com a gente.</p>
+      <a href="#" class="btn btn--primary btn--lg" id="btnEncomendaFinal">Fazer encomenda pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="contato" id="contato">
+    <div class="section-header">
+      <p class="eyebrow">Fale com a gente</p>
+      <h2 class="section-title">Contato</h2>
+    </div>
+
+    <div class="contato__grid">
+      <div class="contato__item">
+        <span class="contato__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3Z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z" fill="currentColor"/></svg>
+        </span>
+        <div>
+          <h3>WhatsApp</h3>
+          <p id="contatoWhats">Fale conosco diretamente pelo WhatsApp.</p>
+          <a href="#" class="link-inline" id="linkWhats">Iniciar conversa</a>
+        </div>
+      </div>
+
+      <div class="contato__item">
+        <span class="contato__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </span>
+        <div>
+          <h3>Instagram</h3>
+          <p>@brigadeiroscarool</p>
+          <a href="https://www.instagram.com/brigadeiroscarool/" target="_blank" rel="noopener" class="link-inline">Seguir no Instagram</a>
+        </div>
+      </div>
+
+      <div class="contato__item" id="itemTelefone" hidden>
+        <span class="contato__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" fill="currentColor"/></svg>
+        </span>
+        <div>
+          <h3>Telefone</h3>
+          <p id="contatoTelefone"></p>
+        </div>
+      </div>
+
+      <div class="contato__item" id="itemEndereco" hidden>
+        <span class="contato__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M12 22s7-7.4 7-12.5A7 7 0 0 0 5 9.5C5 14.6 12 22 12 22Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        </span>
+        <div>
+          <h3>Endereço</h3>
+          <p id="contatoEndereco"></p>
+          <a href="#" class="link-inline" id="linkMaps" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+
+      <div class="contato__item" id="itemHorario" hidden>
+        <span class="contato__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <div>
+          <h3>Horário de atendimento</h3>
+          <p id="contatoHorario"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contato__actions">
+      <a href="#" class="btn btn--primary btn--lg" id="btnFalarWhats">Falar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34">
+          <circle cx="32" cy="32" r="30" fill="var(--rosa-suave)"/>
+          <path d="M32 14c-9 0-16 6.5-16 15 0 7.5 6 12.5 12.5 16.5.8.5 1.7 1 2.5 1.5 1.4.8 3.1.8 4.5 0 .8-.5 1.7-1 2.5-1.5C48 41.5 48 36.5 48 29c0-8.5-7-15-16-15Z" fill="var(--creme)"/>
+        </svg>
+      </span>
+      <span class="footer__nome">Carol Brigadeiros</span>
+    </div>
+
+    <ul class="footer__links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <div class="footer__social">
+      <a href="https://www.instagram.com/brigadeiroscarool/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a>
+      <a href="#" id="linkWhatsFooter" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Z" stroke="currentColor" stroke-width="1.8"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="anoAtual"></span> Carol Brigadeiros. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="none"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Z" stroke="currentColor" stroke-width="1.6"/><path d="M8.3 8.4c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .4-.1.1-.1.3-.3.4l-.4.5c-.1.1-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.4.3.1.5.1.6-.1.1-.1.6-.7.8-1 .2-.2.3-.2.6-.1.3.1 1.6.8 1.9.9.3.1.5.2.6.3.1.2.1.7-.2 1.3-.2.7-1.3 1.2-1.8 1.3-.4.1-1 .1-1.6-.1a10 10 0 0 1-1.5-.6c-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2Z" fill="currentColor"/></svg>
+  <span class="whatsapp-float__label">Fale conosco</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
